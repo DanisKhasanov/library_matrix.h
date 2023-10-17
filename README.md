@@ -18,14 +18,14 @@ typedef struct matrix_struct {
 
 
 ## Операции
-Проект предоставляет следующие операции над матрицами:
+## Проект предоставляет следующие операции над матрицами:
 
-## Создание матрицы (create_matrix):
+# Создание матрицы (create_matrix):
 ```c
 int s21_create_matrix(int rows, int columns, matrix_t *result);
 ```
 
-Очистка матрицы (remove_matrix):
+# Очистка матрицы (remove_matrix):
 ```c
 void s21_remove_matrix(matrix_t *A);
 ```

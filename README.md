@@ -57,6 +57,7 @@ int s21_determinant(matrix_t *A, double *result);
 ```c
 int s21_inverse_matrix(matrix_t *A, matrix_t *result);
 ```
+
 ## Результаты операций ✅
 
 Все операции (кроме сравнения матриц) возвращают результирующий код:

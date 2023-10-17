@@ -19,49 +19,46 @@ typedef struct matrix_struct {
 
 ## Операции
 
-
  Создание матрицы (create_matrix):
 ```c
 int s21_create_matrix(int rows, int columns, matrix_t *result);
 ```
-
  Очистка матрицы (remove_matrix):
 ```c
 void s21_remove_matrix(matrix_t *A);
 ```
-
-# Сравнение матриц (eq_matrix):
+Сравнение матриц (eq_matrix):
 ```c
 int s21_eq_matrix(matrix_t *A, matrix_t *B);
 ```
-# Сложение матриц (sum_matrix) и вычитание матриц (sub_matrix):
-
+Сложение матриц (sum_matrix) и вычитание матриц (sub_matrix):
 ```c
 int s21_sum_matrix(matrix_t *A, matrix_t *B, matrix_t *result);
 int s21_sub_matrix(matrix_t *A, matrix_t *B, matrix_t *result);
 ```
-# Умножение матрицы на число (mult_number) и умножение двух матриц (mult_matrix):
+Умножение матрицы на число (mult_number) и умножение двух матриц (mult_matrix):
 ```c
 int s21_mult_number(matrix_t *A, double number, matrix_t *result);
 int s21_mult_matrix(matrix_t *A, matrix_t *B, matrix_t *result);
 ```
-# Транспонирование матрицы (transpose):
+Транспонирование матрицы (transpose):
 ```c
 int s21_transpose(matrix_t *A, matrix_t *result);
 ```
-# Вычисление миноров матрицы и матрицы алгебраических дополнений (calc_complements):
+Вычисление миноров матрицы и матрицы алгебраических дополнений (calc_complements):
 ```c
 int s21_calc_complements(matrix_t *A, matrix_t *result);
 ```
-# Вычисление определителя матрицы (determinant):
+Вычисление определителя матрицы (determinant):
 ```c
 int s21_determinant(matrix_t *A, double *result);
 ```
-# Вычисление обратной матрицы (inverse_matrix):
+Вычисление обратной матрицы (inverse_matrix):
 ```c
 int s21_inverse_matrix(matrix_t *A, matrix_t *result);
 ```
-# Результаты операций
+## Результаты операций
+
 Все операции (кроме сравнения матриц) возвращают результирующий код:
 
 0 - Операция выполнена успешно
